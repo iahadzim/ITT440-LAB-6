@@ -4,8 +4,8 @@ import time
 import errno
 from multiprocessing import Process
 
-ok_message = 'HTTP/1.0 200 OK\n'
-nok_message = 'HTTP/1.0 404 NotFound\n'
+ok_message = 'HTTP/1.0 200 OK\n\n'
+nok_message = 'HTTP/1.0 404 NotFound\n\n'
 
 def process_start(s_sock):
     s_sock.send(str.encode('Welcome to the Server\n'))
