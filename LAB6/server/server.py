@@ -34,7 +34,7 @@ if __name__ == '__main__':
 
                 print('got a socket error')
 
-    except Exception as e:        
+    except Exception as e:
 	print('an exception occurred!')
         print(e)
 	sys.exit(1)
